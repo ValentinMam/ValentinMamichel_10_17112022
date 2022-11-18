@@ -1,0 +1,24 @@
+{
+  "name": "valentinmamichel_10_17112022",
+  "version": "1.0.0",
+  "description": "Learn@Home project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinMam/ValentinMamichel_10_17112022.git"
+  },
+  "author": "Valentin Mam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValentinMam/ValentinMamichel_10_17112022/issues"
+  },
+  "homepage": "https://github.com/ValentinMam/ValentinMamichel_10_17112022#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0"
+  }
+}
