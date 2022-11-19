@@ -38,19 +38,21 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"> Login Page</a>
+                <a class="nav-link" aria-current="page" href="#login-page">
+                  Login Page</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Chat Page</a>
+                <a class="nav-link" href="#chat-page">Chat Page</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Calendar Page</a>
+                <a class="nav-link" href="#calendar-page">Calendar Page</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Task Page</a>
+                <a class="nav-link" href="#task-page">Task Page</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard Page</a>
+                <a class="nav-link" href="#dashboard-page">Dashboard Page</a>
               </li>
             </ul>
           </div>
@@ -62,7 +64,7 @@
       <!--  -->
       <!-- LOGIN PAGE -->
       <!--  -->
-      <section class="login-page">
+      <section class="login-page" id="login-page">
         <div class="wrapper">
           <div class="logo"></div>
           <div class="text-center mt-4 name">Learn@Home</div>
@@ -96,7 +98,7 @@
       <!--  -->
       <!-- CHAT PAGE -->
       <!--  -->
-      <section class="chat-page">
+      <section class="chat-page" id="chat-page">
         <div class="container">
           <div class="row clearfix">
             <div class="col-lg-12">
@@ -183,7 +185,10 @@
         </div>
       </section>
       <div class="empty-space"></div>
-      <section class="calendar-page">
+      <!--  -->
+      <!-- CALENDAR PAGE -->
+      <!--  -->
+      <section class="calendar-page" id="calendar-page">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -203,7 +208,7 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">Jour</th>
-              <th scope="col">Tâches</th>
+              <th scope="col">Planning</th>
             </tr>
           </thead>
           <tbody>
@@ -218,17 +223,17 @@
             <tr>
               <th scope="row">2</th>
               <td>Vendredi</td>
-              <td>pas de tâche</td>
+              <td></td>
             </tr>
             <tr>
               <th scope="row">3</th>
               <td>Samedi</td>
-              <td>pas de tâche</td>
+              <td></td>
             </tr>
             <tr>
               <th scope="row">4</th>
               <td>Dimanche</td>
-              <td>pas de tâche</td>
+              <td></td>
             </tr>
             <tr class="table-warning">
               <th scope="row">5</th>
@@ -240,17 +245,131 @@
             <tr>
               <th scope="row">6</th>
               <td>Mardi</td>
-              <td>pas de tâche</td>
+              <td></td>
             </tr>
             <tr>
               <th scope="row">7</th>
               <td>Mercredi</td>
-              <td>pas de tâche</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
       </section>
       <div class="empty-space"></div>
+      <!--  -->
+      <!-- TASK PAGE -->
+      <!--  -->
+      <section class="task-page" id="task-page">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button task-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img src="user-1.png" class="user-task" alt="" />
+                Maquette pour le Login
+                <span class="badge text-bg-danger date-badge"> 09/12/22</span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus veritatis...
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button task-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <img src="user-2.png" class="user-task" alt="" />
+                Maquette pour le Dashboard
+                <span class="badge text-bg-danger date-badge"> 06/12/22</span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus veritatis...
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed text-bg-success task-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Créer une tâche
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <input type="date" class="date-input" />
+                <input type="text" class="task-input" placeholder="Tâche" />
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed text-bg-warning task-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Supprimer une tâche
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <!-- DASHBOARD PAGE -->
+      <!--  -->
+      <div class="empty-space"></div>
+      <section class="dashboard-page" id="dashboard-page"></section>
     </main>
   </body>
 </html>
