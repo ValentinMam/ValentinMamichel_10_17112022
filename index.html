@@ -369,7 +369,82 @@
       <!-- DASHBOARD PAGE -->
       <!--  -->
       <div class="empty-space"></div>
-      <section class="dashboard-page" id="dashboard-page"></section>
+      <section class="dashboard-page" id="dashboard-page">
+        <div id="container-dashboard">
+          <div class="profil">
+            <img src="user-3.png" id="profil-picture" alt="" />
+          </div>
+          <div class="date">03 Décembre 2022</div>
+          <div class="message">
+            <button
+              type="button"
+              class="btn btn-secondary position-relative message-button"
+            >
+              Messagerie
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                9+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </div>
+          <div class="logout">Se déconnecter</div>
+        </div>
+        <div id="container-dashboard-2">
+          <div class="task">
+            <ul class="list-group">
+              <li class="list-group-item active task-title" aria-current="true">
+                Tâches
+              </li>
+              <li class="list-group-item">
+                Maquettes pour le Login
+                <span class="badge text-bg-danger date-badge"> 06/12/22</span>
+              </li>
+              <li class="list-group-item">
+                Maquettes pour le dashboard
+                <span class="badge text-bg-danger date-badge"> 09/12/22</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="planning">
+            <ul class="list-group">
+              <li
+                class="list-group-item active planning-title"
+                aria-current="true"
+              >
+                Planning
+              </li>
+              <li class="list-group-item"><strong>03/12</strong></li>
+              <li class="list-group-item"><strong>04/12</strong></li>
+              <li class="list-group-item">
+                <strong>05/12</strong> <br />16h-17h
+                <span class="badge text-bg-warning">Français</span>
+                <br />
+                17-18h
+                <span class="badge text-bg-success">Mathématiques</span>
+              </li>
+              <li class="list-group-item">
+                <strong>06/12</strong>
+                <span class="badge text-bg-danger date-badge"> Tâche</span>
+              </li>
+              <li class="list-group-item">
+                <strong>07/12</strong> <br />16h-17h
+                <span class="badge text-bg-warning">Français</span>
+              </li>
+              <li class="list-group-item"><strong>08/12</strong></li>
+              <li class="list-group-item">
+                <strong>09/12</strong>
+                <span class="badge text-bg-danger date-badge"> Tâche</span>
+              </li>
+              <li class="list-group-item text-bg-secondary">
+                <strong>Voir plus</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
